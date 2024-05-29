@@ -87,14 +87,14 @@ Coming soon...
    # Install fio
    cd ScalaAFA/fio
    ./configure
-   make -j 8
+   make -j $(nproc)
    sudo make install
    # Install spdk
    cd ../spdk  						#(path/ScalaAFA/spdk)
    sudo apt-get update
    sudo scripts/pkgdep.sh
    ./configure --with-fio=/home/femu/ScalaAFA/fio  --enable-debug
-   make -j 8
+   make -j $(nproc)
    ```
 
 8. Hello, ScalaAFA:
