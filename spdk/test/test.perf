@@ -1,0 +1,8 @@
+[global]
+bs=131072
+iodepth=64
+cpumask=0x3
+rw=write
+
+[test1]
+filename=afa0

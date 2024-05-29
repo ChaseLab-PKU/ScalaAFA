@@ -1,0 +1,14 @@
+[global]
+ioengine=build/fio/spdk_bdev
+spdk_json_conf=./test/config_afa.json
+thread=1
+group_reporting=1
+direct=1
+verify=0
+numjobs=1
+iodepth=32
+log_avg_msec=10
+
+[job]
+read_iolog=/home/femu/res/trace/trace.afa0
+write_bw_log=afa0

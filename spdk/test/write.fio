@@ -1,0 +1,17 @@
+[global]
+ioengine=build/fio/spdk_bdev
+spdk_json_conf=./test/config_afa.json
+thread=1
+group_reporting=1
+direct=1
+verify=0
+time_based=1
+runtime=1
+numjobs=1
+iodepth=1
+bs=64k
+
+
+[job]
+filename=afa0
+rw=write

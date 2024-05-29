@@ -1,0 +1,12 @@
+{
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "${workspaceFolder}/meson/mesonbuild/dependencies/data",
+    "files.associations": {
+        "ftl.h": "c",
+        "atomic": "c",
+        "cmath": "c",
+        "limits": "c",
+        "type_traits": "c",
+        "typeinfo": "c"
+    }
+}

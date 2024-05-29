@@ -1,0 +1,6 @@
+bdev_nvme_attach_controller -b nvme0 -t PCIe -a 0000:8a:00.0
+bdev_nvme_attach_controller -b nvme1 -t PCIe -a 0000:8b:00.0
+bdev_nvme_attach_controller -b nvme2 -t PCIe -a 0000:8c:00.0
+bdev_nvme_attach_controller -b nvme3 -t PCIe -a 0000:8d:00.0
+bdev_nvme_attach_controller -b nvme4 -t PCIe -a 0000:18:00.0
+bdev_afa_create -n afa0 -c 64 -k 4 -m 1 -s 0 -b "nvme0n1 nvme1n1 nvme2n1 nvme3n1 nvme4n1"

@@ -1,0 +1,61 @@
+{
+  "subsystems": [
+     {
+       "subsystem": "bdev",
+       "config": [
+         {
+           "method": "bdev_nvme_attach_controller",
+           "params": {
+             "name": "nvme0",
+             "trtype": "PCIe",
+             "traddr": "0000:00:05.0"
+           }
+         },
+         {
+           "method": "bdev_nvme_attach_controller",
+           "params": {
+             "name": "nvme1",
+             "trtype": "PCIe",
+             "traddr": "0000:00:06.0"
+          }
+         },
+         {
+           "method": "bdev_nvme_attach_controller",
+           "params": {
+             "name": "nvme2",
+             "trtype": "PCIe",
+             "traddr": "0000:00:07.0"
+          }
+         },
+         {
+          "method": "bdev_nvme_attach_controller",
+          "params": {
+            "name": "nvme3",
+            "trtype": "PCIe",
+            "traddr": "0000:00:08.0"
+           }
+          },
+          {
+            "method": "bdev_nvme_attach_controller",
+            "params": {
+              "name": "nvme4",
+              "trtype": "PCIe",
+              "traddr": "0000:00:09.0"
+             }
+          },
+          {
+            "method": "bdev_afa_create",
+            "params": {
+              "name": "afa0",
+              "chunk_size_kb": 64,
+              "num_data_base_bdevs": 4,
+              "num_parity_base_bdevs": 1,
+              "num_spare_base_bdevs": 0,
+              "base_bdevs": ["nvme0n1", "nvme1n1", "nvme2n1", "nvme3n1", "nvme4n1"]
+            }
+          }
+       ]
+     }
+   ]
+ }
+ 
