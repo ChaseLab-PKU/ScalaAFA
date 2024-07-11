@@ -11,7 +11,18 @@ We implement the software part of ScalaAFA in SPDK, especially at `spdk/module/b
 Please consider citing our paper at USENIX ATC 2024 if you use ScalaAFA. The BibTex is shown below:
 
 ```latex
-Coming soon...
+@inproceedings {298505,
+author = {Shushu Yi and Xiurui Pan and Qiao Li and Qiang Li and Chenxi Wang and Bo Mao and Myoungsoo Jung and Jie Zhang},
+title = {{ScalaAFA}: Constructing {User-Space} {All-Flash} Array Engine with Holistic Designs},
+booktitle = {2024 USENIX Annual Technical Conference (USENIX ATC 24)},
+year = {2024},
+isbn = {978-1-939133-41-0},
+address = {Santa Clara, CA},
+pages = {141--156},
+url = {https://www.usenix.org/conference/atc24/presentation/yi-shushu},
+publisher = {USENIX Association},
+month = jul
+}
 ```
 
 
