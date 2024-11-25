@@ -1735,7 +1735,8 @@ daemon_init(void *ctx)
 		}
 	}
 
-	SPDK_POLLER_REGISTER(afa_base_bdev_gc_probe, ctx, GC_PROBE_INTERVAL);
+	// SPDK_POLLER_REGISTER(afa_base_bdev_gc_probe, ctx, GC_PROBE_INTERVAL);
+	SPDK_POLLER_REGISTER(afa_phase_switching, ctx, SC_SWITCH_INTERVAL);
 }
 
 
